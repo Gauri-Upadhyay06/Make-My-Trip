@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flights | MakeMyTrip Clone</title>
+
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+ 
+  <link rel="stylesheet" href="flights.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="logo">M</span>
+        <div>
+          <div class="brand-title">MakeMyTrip</div>
+          <div class="brand-subtitle">Clone</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="flights.html" class="active"><i class="fa-solid fa-plane"></i> Flights</a></li>
+          <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+          <li><a href="#"><i class="fa-solid fa-train"></i> Trains</a></li>
+          <li><a href="#"><i class="fa-solid fa-suitcase-rolling"></i> Holidays</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a href="signin.html" class="btn">Sign in</a>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="container">
+    <section class="flights">
+      <div class="flight-card">
+        <h1>Search Flights</h1>
+        <p class="lead">Find the best deals on domestic and international flights</p>
+
+        <form class="search-form">
+          <div class="input-group">
+            <label for="from">From</label>
+            <input id="from" type="text" placeholder="Enter departure city" required>
+          </div>
+
+          <div class="input-group">
+            <label for="to">To</label>
+            <input id="to" type="text" placeholder="Enter destination city" required>
+          </div>
+
+          <div class="input-group">
+            <label for="depart">Departure Date</label>
+            <input id="depart" type="date" required>
+          </div>
+
+          <div class="input-group">
+            <label for="return">Return Date</label>
+            <input id="return" type="date">
+          </div>
+
+          <div class="input-group">
+            <label for="travellers">Travellers</label>
+            <select id="travellers">
+              <option>1 Adult</option>
+              <option>2 Adults</option>
+              <option>3 Adults</option>
+              <option>Family (4+)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search Flights</button>
+        </form>
+      </div>
+    </section>
+
+   
+    <section class="section">
+      <h2>Popular Flight Deals</h2>
+      <div class="deals">
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?auto=format&fit=crop&w=600&q=60" alt="Goa Flight">
+          <div>
+            <h3>Delhi → Goa</h3>
+            <p>From ₹2,499 | Indigo Airlines</p>
+            <button class="btn-small">Book</button>
+          </div>
+        </div>
+
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1542728928-1413d1894ed1?auto=format&fit=crop&w=600&q=60" alt="Mumbai Flight">
+          <div>
+            <h3>Mumbai → Jaipur</h3>
+            <p>From ₹2,999 | SpiceJet</p>
+            <button class="btn-small">Book</button>
+          </div>
+        </div>
+
+        <div class="deal-card">
+          <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=600&q=60" alt="Bangalore Flight">
+          <div>
+            <h3>Bangalore → Delhi</h3>
+            <p>From ₹3,499 | Air India</p>
+            <button class="btn-small">Book</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 MakeMyTrip Clone | Flight Booking Page</p>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

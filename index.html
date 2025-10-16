@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakeMyTrip Clone</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <span class="logo">M</span>
+        <div>
+          <div class="brand-title">MakeMyTrip</div>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="flights.html"><i class="fa-solid fa-plane"></i> Flights</a></li>
+          <li><a href="#"><i class="fa-solid fa-hotel"></i> Hotels</a></li>
+          <li><a href="#"><i class="fa-solid fa-train"></i> Trains</a></li>
+          <li><a href="holidays.html"><i class="fa-solid fa-suitcase-rolling"></i> Holidays</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a href="signin.html" class="btn">Sign in</a>
+        <button type="button" class="btn btn-primary"><i class="fa-solid fa-ticket"></i> Book Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-grid">
+        <!-- Left Hero Card -->
+        <div class="hero-left">
+          <div class="hero-card">
+            <h1>Find cheap flights, hotels & holidays</h1>
+            <p class="lead">Compare prices and book your perfect trip instantly.</p>
+
+            <form class="search" action="#" method="GET">
+              <div class="field">
+                <label for="type">I want to book</label>
+                <select id="type" name="type">
+                  <option>Flights</option>
+                  <option>Hotels</option>
+                  <option>Holidays</option>
+                  <option>Trains</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="from">From</label>
+                <input id="from" name="from" type="text" placeholder="Enter departure city" required>
+              </div>
+
+              <div class="field">
+                <label for="to">To</label>
+                <input id="to" name="to" type="text" placeholder="Enter destination city" required>
+              </div>
+
+              <div class="field">
+                <label for="depart">Depart</label>
+                <input id="depart" name="depart" type="date" required>
+              </div>
+
+              <div class="field">
+                <label for="return">Return</label>
+                <input id="return" name="return" type="date">
+              </div>
+
+              <div class="field submit">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Side Offers -->
+        <aside class="side-offers">
+          <div class="offer-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=60" alt="Goa">
+            <div>
+              <h3>Goa Flights</h3>
+              <p>Starts ₹2,999 — limited time deal!</p>
+            </div>
+          </div>
+
+          <div class="offer-card">
+            <img src="img.jpg" alt="Jaipur">
+            <div>
+              <h3>Jaipur Hotels</h3>
+              <p>Up to 40% off on early bookings</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Popular Destinations</h2>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=60" alt="Goa">
+          <h3>Goa</h3>
+          <p>Beaches · Water Sports · Nightlife</p>
+        </div>
+
+        <div class="card">
+          <img src="img.jpg" alt="Jaipur">
+          <h3>Jaipur</h3>
+          <p>Heritage · Food · Culture</p>
+        </div>
+
+        <div class="card">
+          <img src="img1.jpeg" alt="Shimla">
+          <h3>Shimla</h3>
+          <p>Hills · Nature · Snow</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
